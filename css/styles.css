@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Hanken Grotesk, sans-serif;
+  font-size: 18px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.result {
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding-bottom: 3rem;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.result h3 {
+  padding-top: 3rem;
+  font-size: x-large;
+}
+
+.result h2 {
+  font-size: 2.25rem;
+}
+
+.result p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.final-score {
+  margin: 2rem auto;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1) );
+
+}
+
+.final-score h1 {
+  font-size: 5rem;
+}
+
+.summary {
+  padding: 3rem 1.5rem;
+}
+
+.summary h1 {
+  margin-bottom: 1.75rem;
+}
+
+.box {
+  padding: 1.25rem;
+  display: flex;
+  justify-content:space-between;
+  border-radius: 1rem;
+  font-weight: 700;
+  margin: 1.25rem 0;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.10);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.10);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.10);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.10);
+  color: hsl(234, 85%, 45%);
+}
+
+.score {
+  color: black;
+}
+
+/* .reaction div:last-child span { */
+.score span {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+  
+  /* .reaction div:first-child span { */
+.category {
+  position: absolute;
+  margin-left: 1rem;
+}
+
+button {
+  padding: 1.25rem;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: larger;
+  font-weight: 700;
+  border: none;
+  margin-top: 1.75rem;
+}
+
+button:active {
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(221, 100%, 96%);
+  }
+
+  .score-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .result {
+    border-radius: 3rem;
+  }
+
+  .result p {
+    width: 45%;
+  }
+}
